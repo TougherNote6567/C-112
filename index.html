@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Emotions to Emojies</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+    <h2 class="btn btn-warning  yay">EMOTION TO EMOJI APP<br><span>&#128512;</span>
+        <span>&#128516;</span>
+        <span>&#128546;</span>
+        <span>&#128552;</span>
+        <span>&#128545;</span>
+        <span>&#128577;</span>
+        <span>&#9996;</span>
+
+        
+    </h2>
+
+    <h4>Take your selfie to generate emojies.</h4>
+    <h4><b style="color:goldenrod">Are you Happy?</b></h4>
+    <h4><b style="color:blue">Are you Sad?</b></h4>
+    <h4><b style="color:red">Are you Angry?</b></h4>
+
+    <br>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-muted" style="color: forestgreen; background-color: white;">Webcam Preview :</label>
+<div id="something_something"></div><br><button class="btn btn-success" onclick="capture()">Take your selfie</button>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+    <label>Prediction 1:</label>
+    <p class="emotionName" id="eN1"></p>
+    
+    <br>
+    <p class="emotionEmoji" id="eE1"></p>
+
+
+    <br><br><br>
+
+    <label>Prediction 2:</label>
+    <p class="emotionName" id="eN2"></p>
+    
+    <br>
+    <p class="emotionEmoji" id="eE2"></p>
+        
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <label class="btn btn-muted" style="color: forestgreen; background-color: white;;">Picture Preview :</label>
+<div id="pictr"></div><br><button class="btn btn-success" onclick="emotion()">Predict Emotion</button>
+    </div>
+</center>
+</div>
+    <script src="main.js"></script>
+
+</body>
+
+
+</html>

@@ -1,0 +1,16 @@
+body{
+    background-color:fuchsia;
+}
+
+.yay{
+    letter-spacing:3px;
+font-size:25px;
+}
+
+.emotionName, .emotionEmoji{
+font-size : 50px;
+}
+
+#something_something, #pictr{
+    transform: rotateY(180deg); -webkit-transform:rotateY(180deg);
+}
